@@ -5,10 +5,11 @@ Vagrant::Config.run do |config|
   config.vm.box = "precise32"
   config.vm.box_url = "http://files.vagrantup.com/precise32.box"
   
-  # TODO:
-  #  - apt-get update before installing stuff; mysql installation fails otherwise
-
   config.vm.provision :chef_solo do |chef|
+    
+    chef.cookbooks_path = ["cookbooks", "cookbooks-mantisbt"]
+
+    chef.add_recipe "apt::default"
     chef.add_recipe "apache2"
     chef.add_recipe "mysql"
     chef.add_recipe "mysql::server"

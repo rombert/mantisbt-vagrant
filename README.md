@@ -10,11 +10,7 @@ Usage
 
 Bootstrap the needed external cookbooks
 
-	knife cookbook site download apache2  
-	knife cookbook site download git
-	knife cookbook site download mysql
-	knife cookbook site download openssl
-	knife cookbook site download php
+	for cookbook in 'apache2 git mysql openssl php apt'; do knife cookbook site download $cookbook; done
 	for cookbook in $(ls *.tar.gz); do tar xf $cookbook -C cookbooks && rm -f $cookbook; done
 
 Initialise the internal cookbooks

@@ -1,0 +1,3 @@
+[submodule "cookbooks-mantisbt"]
+	path = cookbooks-mantisbt
+	url = https://github.com/rombert/mantisbt-chef-cookbooks.git
