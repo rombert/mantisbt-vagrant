@@ -15,6 +15,7 @@ Bootstrap the needed external cookbooks
 	knife cookbook site download mysql
 	knife cookbook site download openssl
 	knife cookbook site download php
+	for cookbook in $(ls *.tar.gz); do tar xf $cookbook -C cookbooks && rm -f $cookbook; done
 
 Initialise the internal cookbooks
 
