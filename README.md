@@ -25,7 +25,7 @@ Run the machine
 MantisBT installation
 ---
 
-Navigated to http://localhost:8889/mantisbt/admin/ and kick of the installation. 
-The database username is root, password toor.
+Navigate to [http://localhost:8889/mantisbt/admin/]() and kick of the installation. 
+The database username is _root_, password _toor_.
 
 Enjoy!
