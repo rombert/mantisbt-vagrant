@@ -21,3 +21,11 @@ Initialise the internal cookbooks
 Run the machine
 
 	vagrant up
+
+MantisBT installation
+---
+
+Navigated to http://localhost:8889/mantisbt/admin/ and kick of the installation. 
+The database username is root, password toor.
+
+Enjoy!
