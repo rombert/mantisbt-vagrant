@@ -10,7 +10,7 @@ Usage
 
 Bootstrap the needed external cookbooks
 
-	for cookbook in 'apache2 git mysql openssl php apt'; do knife cookbook site download $cookbook; done
+	for cookbook in 'apache2 git mysql postgresql openssl php apt'; do knife cookbook site download $cookbook; done
 	for cookbook in $(ls *.tar.gz); do tar xf $cookbook -C cookbooks && rm -f $cookbook; done
 
 Initialise the internal cookbooks
@@ -26,7 +26,9 @@ Run the machine
 MantisBT installation
 ---
 
-Navigate to [http://localhost:8889/mantisbt/admin/]() and kick of the installation. 
-The database username is _root_, password _toor_.
+Navigate to http://localhost:88XX/mantisbt/admin/ and kick of the installation.
+The HTTP port varies between configurations, please see the Vagrantfile for
+details. The database username is _root_ (for MySQL) or _postgres_ (for PostgreSQL)
+and the password is _toor_.
 
 Enjoy!
