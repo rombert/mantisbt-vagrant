@@ -18,6 +18,7 @@ Vagrant::Config.run do |config|
     chef.add_recipe "php"
     chef.add_recipe "php::module_pgsql"
     chef.add_recipe "apache2::mod_php5"
+    chef.add_recipe "mantisbt::postgres"
 
     chef.json = { 
       :apache => { 
