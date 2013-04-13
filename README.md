@@ -20,6 +20,7 @@ Initialise the internal cookbooks
 
 Run the machine
 
+	cd mantisbt-mysql # or another configuration
 	vagrant up
 
 MantisBT installation
