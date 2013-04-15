@@ -10,6 +10,7 @@ Usage
 
 Bootstrap the needed external cookbooks
 
+	mkdir cookbooks
 	for cookbook in 'apache2 git mysql postgresql openssl php apt'; do knife cookbook site download $cookbook; done
 	for cookbook in $(ls *.tar.gz); do tar xf $cookbook -C cookbooks && rm -f $cookbook; done
 
